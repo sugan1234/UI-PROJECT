@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="import" href="HTML/header.html">
+    </head>
+    <script>
+        $(document).ready(function(){
+            debugger;
+            var header = document.getElementsByTagName("link")[1].href;
+            $('#header').load(header);
+        });
+    </script>
+    <body>
+        <div id='header'></div>
+        <div style="text-align: center;">Home content</div>
+    </body>
+</html>
