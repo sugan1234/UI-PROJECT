@@ -1,0 +1,7 @@
+PAGES:-
+1)Home
+2)New Employee
+3)Edit Employee
+4)Listing Employee
+5)Help
+6)Support
