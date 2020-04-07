@@ -5,16 +5,26 @@
         <link rel="stylesheet" href="CSS/main.css">
         <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <link rel="import" href="HTML/header.html">
+        <link rel="import" href="HTML/support.html">
+        <link rel="import" href="HTML/help.html">
     </head>
     <script>
         $(document).ready(function(){
-            debugger;
+            var support = document.getElementsByTagName("link")[2].href;
             var header = document.getElementsByTagName("link")[1].href;
-            $('#header').load(header);
+            var help=document.getElementsByTagName("link")[3].href;
+                $('#header').load(header);
+                 $('#support').load(support);
+                 $('#home').click(function(){
+                     $('#help').load(help);
+                 });
+            
         });
     </script>
     <body>
         <div id='header'></div>
-        <div style="text-align: center;">Home content</div>
+        <div id='support'></div>
+        <div id='home' style="text-align: center;">Home content</div>
+        <div id='help'></div>
     </body>
 </html>
