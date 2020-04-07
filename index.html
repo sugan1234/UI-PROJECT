@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="CSS/main.css">
-        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <link rel="import" href="HTML/header.html">
-        <link rel="import" href="HTML/support.html">
-        <link rel="import" href="HTML/help.html">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="import" href="html/header.html">
+        <link rel="import" href="html/home.html">
+        <link rel="import" href="html/support.html">
+        <link rel="import" href="html/help.html">
     </head>
     <script>
-        $(document).ready(function(){
-            var support = document.getElementsByTagName("link")[2].href;
-            var header = document.getElementsByTagName("link")[1].href;
-            var help=document.getElementsByTagName("link")[3].href;
-                $('#header').load(header);
-                 $('#support').load(support);
-                 $('#home').click(function(){
-                     $('#help').load(help);
-                 });
-            
-        });
-    </script>
+      debugger;
+      $(document).ready(function(){
+        var extern = document.getElementsByTagName("link")[2].href;
+        $('#header').load(extern);
+        var home = document.getElementsByTagName("link")[3].href;
+        $('#content').load(home);
+      });
+      </script>
+      <style>
+        #header{
+          top:0px;
+          position: sticky;
+        }
+      </style>
     <body>
-        <div id='header'></div>
-        <div id='support'></div>
-        <div id='home' style="text-align: center;">Home content</div>
-        <div id='help'></div>
+        <div id="header"></div>
     </body>
 </html>
