@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    var extern = document.getElementsByTagName("link")[2].href;
+    $('#header').load(extern);
+    var home = document.getElementsByTagName("link")[3].href;
+    $('#content').load(home);
 
     $('#home').addClass("active");
 
@@ -26,5 +30,8 @@ $(document).ready(function() {
     }else if(a==3){
       var help = document.getElementsByTagName("link")[5].href;
       $('#content').load(help);
+    }else if(a==4){
+      var test = document.getElementsByTagName("link")[6].href;
+      $('#content').load(test);
     }
   }

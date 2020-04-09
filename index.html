@@ -10,17 +10,8 @@
         <link rel="import" href="html/home.html">
         <link rel="import" href="html/support.html">
         <link rel="import" href="html/help.html">
-    </head>
-    <script>
-      debugger;
-      $(document).ready(function(){
-        var extern = document.getElementsByTagName("link")[2].href;
-        $('#header').load(extern);
-        var home = document.getElementsByTagName("link")[3].href;
-        $('#content').load(home);
-      });
-      </script>
-      <style>
+        <link rel="import" href="html/test.html">
+         <style>
         #header{
           top:0px;
           position: sticky;
@@ -28,5 +19,6 @@
       </style>
     <body>
         <div id="header"></div>
+        <div id="content"></div>
     </body>
 </html>
